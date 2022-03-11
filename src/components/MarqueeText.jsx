@@ -17,10 +17,10 @@ function MarqueeText() {
       throw response;
     })
     .then((data) => {
-      var mydata = data.weather[0].description;
-      const str2 = mydata.charAt(0).toUpperCase() + mydata.slice(1);
-      setWeather(str2)
-      var temp = data.main.temp;
+      var datadesc = data.weather[0].description;
+      const datadesc2 = datadesc.charAt(0).toUpperCase() + datadesc.slice(1);
+      setWeather(datadesc2)
+      var temp = Math.round(data.main.temp);
       setTemperature(temp)
       var wind = data.wind.speed;
       setWind(wind)
@@ -38,25 +38,19 @@ function MarqueeText() {
 
   useEffect(() => {
    getWeather(WEATHER_API)
-   return () => {
-    getWeather(WEATHER_API)
-  };
-  }, [weather]);
+  }, []);
 
 
   return (
     <div className="Marquee-container">
       <Marquee style={{height: "45px",fontWeight: "600"} } pauseOnHover={true} speed={100} gradientColor={[255, 139, 46]} gradientWidth={20}>
           <p>Stockholm </p>
-          <p><img src={icon} /></p>
+          <p><img className="Weather-icon" src={icon} alt="weather-icon" /></p>
           <p>{temperature}° C{" "}</p>
           <p>{weather}{" "}</p>
           <p>Wind {wind}{" "}m/s S</p>
           <p>There is no bad weather, just soft
           runners</p>
-          {/* <p>There is no bad weather, just soft
-          runners</p>
-          <p>Stockholm -2° C Mostly cloudy</p> */}
       </Marquee>
     </div>
   );

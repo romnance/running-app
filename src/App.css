@@ -114,6 +114,10 @@ footer {
   margin-left: 16px;
 }
 
+.Weather-icon {
+  width: 24px;
+}
+
 .Content {
   display: flex;
   flex-direction: column;
@@ -148,8 +152,8 @@ footer {
 
 .First-header {
   text-align: center;
-  font-size: 55px;
-  line-height: 140%;
+  font-size: 6vw;
+  line-height: 135%;
   font-family: Roboto;
 }
 
