@@ -10,7 +10,7 @@ import "./Gear.css";
 function Gear() {
   return (
     <>
-      <div className="Gear-container">
+      <div className="Gear-container" id="Gear">
         <h1 className="First-header Margin-top">
           The only gear you really need is running shoes (and smile)
         </h1>
@@ -66,10 +66,7 @@ function Gear() {
             <div className="Right-column">
               <div>
                 <h4>APPLE Watch NIKE SE GPS</h4>
-                <p>
-                  Watches make it easy to track your heart rate and record
-                  workouts
-                </p>
+                <p>Watches make it easy to track your heart rate and record workouts</p>
               </div>
               <div className="Img-container">
                 <img src={AppleWatch} alt="Apple-watch" className="Margins-v" />

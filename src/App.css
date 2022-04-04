@@ -106,12 +106,6 @@ footer {
   font-family: Roboto;
 }
 
-h3 {
-  font-size:calc(8px + 1.3vw);
-  line-height: 125%;
-  font-family: Roboto;
-}
-
 h4 {
   font-size:calc(8px + 1.5vw);
   line-height: 125%;
@@ -149,4 +143,16 @@ p {
 
 .Margin-left {
   margin-left: 24px;
+}
+
+#Gear {
+  background-color: #f5f5d4;
+}
+
+#Books {
+    background-color: #f7fa4f;
+}
+
+#Inspiration {
+   background-color: #CEC2FF;
 }
