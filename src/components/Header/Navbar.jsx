@@ -3,7 +3,7 @@ import React from "react";
 function Navbar() {
   return (
     <nav className="Navbar">
-      <ul
+      <ul className="Row"
       >
         <li>
           <a className="Header-nav-label" href="#">

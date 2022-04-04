@@ -6,7 +6,7 @@ function Footer() {
             <div className="Box-bottom">
                 <div className="Inner">
                     <div className="Box-left">
-                        <p>See on the street, have fun!</p>
+                        <p>See you on the street, have fun!</p>
                     </div>
                     <div className="Box-right">
                         <a className="Footer-link">GitHub</a>

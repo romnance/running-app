@@ -1,4 +1,5 @@
 import React from "react";
+import "./Header.css";
 import Navbar from "./Navbar";
 
 function Header() {
@@ -8,7 +9,7 @@ function Header() {
         <div className="Box-left">
           <h1 className="Header-logo">RUN</h1>
         </div>
-        <div className="Box-right" className="Nav-list">
+        <div className="Box-right Nav-list">
           <Navbar />
         </div>
       </div>

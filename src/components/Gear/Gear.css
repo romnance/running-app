@@ -1,0 +1,164 @@
+.Gear-container {
+  background-color: #f5f5d4;
+  width: 100%;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.Gear-container iframe {
+  margin-top: 36px;
+  width: 100%;
+  margin-bottom: 4vw;
+}
+
+.Grid-cell {
+  background-color: white;
+  filter: drop-shadow(0 0 0.3rem rgba(165, 165, 165, 0.3));
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Grid-cell:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+    filter: drop-shadow(0 0 0.3rem rgba(104, 103, 62, 0.8));
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    
+    30%, 50%, 70% {
+      transform: translate3d(-2px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(2px, 0, 0);
+  }
+}
+
+.Left-column {
+    padding: 8px;
+    width: 30%;
+}
+
+.Deep-blue {
+    color:rgb(16, 40, 252);
+}
+
+.Red {
+    color:tomato;
+}
+
+.Blue {
+    color:rgb(59, 196, 214);
+}
+
+.Green {
+    color:rgb(76, 255, 6);
+}
+
+.Violet {
+    color:rgb(204, 53, 235);
+}
+
+.Right-column {
+    width: 70%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Img-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Five img {
+    margin: 8px 0;
+    max-height: 164px;
+    max-width: 129px;
+}
+
+.Right-column h4 {
+    text-align: right;
+    padding-top: 8px;
+    padding-right: 8px;
+}
+
+.Right-column p {
+    text-align: right;
+    padding-top: 8px;
+    padding-right: 8px;
+    font-size:calc(8px + 1vw);
+}
+
+.Right-column img {
+    width: 100%;
+    padding-right: 8px
+}
+
+.One {
+  grid-area: one;
+}
+
+.Two {
+  grid-area: two;
+}
+
+.Three {
+  grid-area: three;
+}
+
+.Four {
+  grid-area: four;
+}
+
+.Five {
+  grid-area: five;
+}
+
+.Gear-grid-container {
+  margin: 42px 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  gap: 12px 12px;
+  grid-template-areas:
+    "one two . five"
+    ". three four .";
+}
+
+@media screen and (max-width: 850px) {
+  .Gear-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "one two ."
+      "three . four"
+      ". five .";
+  }
+}
+
+@media screen and (max-width: 650px) {
+    .Gear-grid-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas:
+        "one ."
+        "two three"
+        ". four"
+        "five .";
+    }
+  }
