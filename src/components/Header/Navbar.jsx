@@ -26,9 +26,7 @@ function Navbar() {
             scrollTo("Gear");
           }}
         >
-          <a className="Header-nav-label" href="#Gear">
-            Gear
-          </a>
+          <a href="#Gear">Gear</a>
         </li>
         <li>
           <a

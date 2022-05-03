@@ -13,6 +13,14 @@
     overflow: hidden;
   }
   
+.Color-change {
+     background-color: #f7fa4f;
+}
+
+  .Transparent {
+    background-color: transparent;
+  }
+  
   .Header-main {
     display: flex;
     width: 100%;
@@ -42,13 +50,23 @@
     text-decoration: none;
     color: rgb(36, 36, 36);
     font-size: 16px;
+    font-weight: 600;
     overflow: hidden;
   }
 
   .Navbar a:hover, .Navbar a:visited, .Navbar a:active  {
     background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid #b2b4b4;
+    border-bottom: 1px solid #b4b2b4;
     overflow: hidden;
+  }
+
+  .Navbar a:hover {
+    color: rgb(16, 40, 252);
+    background-color: #CEC2FF;
+  }
+
+  .Active {
+       color: rgb(16, 40, 252);
   }
 
   /* To align list items in a row */

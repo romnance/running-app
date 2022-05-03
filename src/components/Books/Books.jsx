@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Murakami from "../../img/Murakami.jpeg";
 import Jurek from "../../img/Jurek.jpeg";
 import "./Books.css";
 
 function Books() {
+  const [showElement, setShowElement] = useState(false);
+  const showOnScroll = () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 2510) {
+      setShowElement(true);
+    } else {
+      setShowElement(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", showOnScroll);
+
+    return () => {
+      window.removeEventListener("scroll", showOnScroll);
+    };
+  }, []);
+
   return (
     <div className="Books-container" id="Books">
       <div className="Left-column">
@@ -17,11 +35,23 @@ function Books() {
         </p>
       </div>
       <div className="Right-column">
-        <div className="Img-container-first">
-          <img src={Murakami} alt="Murakami's-book" className="Margins-v" />
+        <div
+          className={
+            showElement
+              ? "Img-container-first Inline-photo Is-visible"
+              : "Img-container-first Inline-photo"
+          }
+        >
+          <img src={Murakami} alt="Murakami's-book" />
         </div>
-        <div className="Img-container-second">
-          <img src={Jurek} alt="Jurek's-book" className="Margins-v" />
+        <div
+          className={
+            showElement
+              ? "Img-container-second Inline-photo Is-visible"
+              : "Img-container-second Inline-photo"
+          }
+        >
+          <img src={Jurek} alt="Jurek's-book" />
         </div>
       </div>
     </div>
