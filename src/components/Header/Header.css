@@ -14,7 +14,21 @@
   }
   
 .Color-change {
-     background-color: #f7fa4f;
+    background-color: #f7fa4f;
+    animation: newcolor 2.5s infinite alternate;  
+    animation-iteration-count: 1;   
+}
+
+@keyframes newcolor {
+  0% {
+      background-color: #f5f5d4;
+  }
+  50% {
+      background-color: #fdff82;
+  }
+  100% {
+    background-color: #f7fa4f;
+  }
 }
 
   .Transparent {
@@ -30,8 +44,15 @@
   }
 
   .Header-logo {
+    padding: 0 12px;
     max-width: 100%;
     height: auto;
+  }
+
+   .Header-logo:hover {
+    color: rgb(16, 40, 252);
+    text-shadow: 1px 4px 10px #b5b6fa;
+    background:transparent;
   }
   
   .Navbar .Nav-list {

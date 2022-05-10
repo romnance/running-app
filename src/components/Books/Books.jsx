@@ -7,7 +7,7 @@ function Books() {
   const [showElement, setShowElement] = useState(false);
   const showOnScroll = () => {
     console.log(window.scrollY);
-    if (window.scrollY >= 2510) {
+    if (window.scrollY >= 2250) {
       setShowElement(true);
     } else {
       setShowElement(false);

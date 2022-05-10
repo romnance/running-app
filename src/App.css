@@ -35,7 +35,7 @@ footer {
 }
 
 .Box-left {
-  padding: 0 23px;
+  padding: 0 16px;
   border-left: 1px solid #b2b4b4;
   overflow: hidden;
 }
@@ -151,9 +151,10 @@ p {
 }
 
 #Books {
-    background-color: #f7fa4f;
+  background: rgb(247,250,79);
+  background: linear-gradient(0deg, rgba(247,250,79,1) 0%, rgba(245,245,212,1) 100%);
 }
 
 #Inspiration {
-   background-color: #CEC2FF;
+   background-color: rgb(10, 10, 10);
 }
