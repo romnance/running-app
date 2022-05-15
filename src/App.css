@@ -14,23 +14,34 @@ ul {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
 
 footer {
-  padding-bottom: 0;
   font-size: 13px;
-  height: 30px;
+  height: fit-content;
   line-height: 30px;
   position: relative;
   background-color: #cec2ff;
   z-index: -1;
+  box-sizing: border-box;
+  overflow: hidden;
 }
+
+footer p {
+  padding-left: 12px;
+  font-size: min(max(8px, 3vw), 16px);
+}
+
+footer .Box-left, footer .Box-right {
+  padding: 4px 0;
+}
+
 
 .Inner {
   display: flex;
   height: 100%;
+  width: 100%;
   justify-content: space-between;
   position: relative;
   max-width: 100%;
   margin: 0 auto;
-  padding-right: 23px;
   clear: both;
 }
 
@@ -51,12 +62,11 @@ footer {
 }
 
 .Footer-link {
-  border-right: 1px solid #b2b4b4;
   display: inline-block;
-  padding: 0 2em;
+  padding: 0 1em;
   text-decoration: none;
   color: rgb(36, 36, 36);
-  font-size: 16px;
+  font-size: min(max(8px, 3vw), 16px);
   height: 100%;
 }
 
@@ -156,5 +166,6 @@ p {
 }
 
 #Inspiration {
-   background-color: rgb(10, 10, 10);
+  background: rgb(247,250,79);
+  background: linear-gradient(0deg, rgba(#cec2ff,1) 0%, rgba(247,250,79,1) 100%);
 }

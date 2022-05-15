@@ -6,7 +6,6 @@ import "./Books.css";
 function Books() {
   const [showElement, setShowElement] = useState(false);
   const showOnScroll = () => {
-    console.log(window.scrollY);
     if (window.scrollY >= 2250) {
       setShowElement(true);
     } else {
@@ -25,14 +24,18 @@ function Books() {
   return (
     <div className="Books-container" id="Books">
       <div className="Left-column">
-        <h3>
-          Succeeding in any activity, even running, is much easier after reading books on
-          the subject
-        </h3>
+        <h3>Must read</h3>
         <p>
-          So far, these two books are my favorite running books. On days of lack of
-          motivation, it was enough to read just a couple of pages to stop being lazy.
+          If you are a runner, these books are very inspiring. Haruki Murakami shares his
+          story of how running helped him become more creative in what he loves.
         </p>
+        <p>
+          In Eat and Run, Scott Jurek tells the story of his life as a professional
+          athlete with a vegan diet. Changes in nutrition played a very important role for
+          him and he improved his athletic performance. At the end of each chapter, the
+          author shares the recipe.
+        </p>
+        <p>Sometimes running isn't just about sports and physical activity.</p>
       </div>
       <div className="Right-column">
         <div
