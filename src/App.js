@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import DotRing from "./components/DotRing/DotRing";
 import MarqueeText from "./components/MarqueeText";
 import Header from "./components/Header/Header";
 import ImageBlock from "./components/ImageBlock";
@@ -11,6 +12,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
+      <DotRing />
       <MarqueeText />
       <Header />
       <section className="Content">

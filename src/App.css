@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  cursor: none;
 }
 
 ul {
@@ -11,28 +12,27 @@ ul {
   padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
 
 footer {
-  font-size: 13px;
   height: fit-content;
-  line-height: 30px;
   position: relative;
   background-color: #cec2ff;
-  z-index: -1;
+  line-height: min(max(8px, 3vw), 30px);
   box-sizing: border-box;
   overflow: hidden;
 }
 
 footer p {
   padding-left: 12px;
-  font-size: min(max(8px, 3vw), 16px);
+  font-weight: 500;
+  font-size: min(max(12px, 3vw), 20px);
 }
 
-footer .Box-left, footer .Box-right {
-  padding: 4px 0;
+footer .Box-left,
+footer .Box-right {
+  padding: 8px 0;
 }
-
 
 .Inner {
   display: flex;
@@ -42,7 +42,6 @@ footer .Box-left, footer .Box-right {
   position: relative;
   max-width: 100%;
   margin: 0 auto;
-  clear: both;
 }
 
 .Box-left {
@@ -66,8 +65,14 @@ footer .Box-left, footer .Box-right {
   padding: 0 1em;
   text-decoration: none;
   color: rgb(36, 36, 36);
-  font-size: min(max(8px, 3vw), 16px);
+  font-weight: 500;
+  font-size: min(max(12px, 3vw), 20px);
   height: 100%;
+}
+
+.Footer-link:hover {
+  color: rgb(16, 40, 252);
+  text-shadow: 1px 4px 10px #b5b6fa;
 }
 
 .Marquee-container {
@@ -93,8 +98,7 @@ footer .Box-left, footer .Box-right {
 }
 
 .Image-block {
-  background: url("../public/images/Runners-unsplash.jpeg") no-repeat center
-    center;
+  background: url("../public/images/Runners-unsplash.jpeg") no-repeat center center;
   width: 100%;
   height: 100vh;
   -webkit-background-size: cover;
@@ -118,13 +122,13 @@ footer .Box-left, footer .Box-right {
 }
 
 h4 {
-  font-size:calc(8px + 1.5vw);
+  font-size: calc(8px + 1.5vw);
   line-height: 125%;
   font-family: Roboto;
 }
 
 p {
-  font-size:calc(8px + 1.4vw);
+  font-size: calc(8px + 1.4vw);
   font-family: Roboto;
 }
 
@@ -132,7 +136,7 @@ p {
   font-family: Roboto;
   font-size: 3vw;
   line-height: 135%;
-  color:#5b5c5c;
+  color: #5b5c5c;
 }
 
 .Margin-top-xs {
@@ -151,7 +155,6 @@ p {
   margin-top: 12vh;
 }
 
-
 .Margin-left {
   margin-left: 24px;
 }
@@ -161,11 +164,15 @@ p {
 }
 
 #Books {
-  background: rgb(247,250,79);
-  background: linear-gradient(0deg, rgba(247,250,79,1) 0%, rgba(245,245,212,1) 100%);
+  background: rgb(247, 250, 79);
+  background: linear-gradient(
+    0deg,
+    rgba(247, 250, 79, 1) 0%,
+    rgba(245, 245, 212, 1) 100%
+  );
 }
 
 #Inspiration {
-  background: rgb(247,250,79);
-  background: linear-gradient(0deg, rgba(#cec2ff,1) 0%, rgba(247,250,79,1) 100%);
+  background: rgb(247, 250, 79);
+  background: linear-gradient(0deg, rgba(#cec2ff, 1) 0%, rgba(247, 250, 79, 1) 100%);
 }

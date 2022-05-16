@@ -1,96 +1,98 @@
 .Header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    font-size: 13px;
-    box-sizing: border-box;
-    font-weight: 400;
-    background-color: #f5f5d4;
-    z-index: 9;
-    border-bottom: 1px solid #b2b4b4;
-    overflow: hidden;
-  }
-  
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 13px;
+  box-sizing: border-box;
+  font-weight: 400;
+  background-color: #f5f5d4;
+  z-index: 9;
+  border-bottom: 1px solid #b2b4b4;
+  overflow: hidden;
+}
+
 .Color-change {
-    background-color: #f7fa4f;
-    animation: newcolor 2.5s infinite alternate;  
-    animation-iteration-count: 1;   
+  background-color: #f7fa4f;
+  animation: newcolor 2.5s infinite alternate;
+  animation-iteration-count: 1;
 }
 
 @keyframes newcolor {
   0% {
-      background-color: #f5f5d4;
+    background-color: #f5f5d4;
   }
   50% {
-      background-color: #fdff82;
+    background-color: #fdff82;
   }
   100% {
     background-color: #f7fa4f;
   }
 }
 
-  .Transparent {
-    background-color: transparent;
-  }
-  
-  .Header-main {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    height: 60px;
-    border-top: 1px solid #b2b4b4;
-  }
+.Transparent {
+  background-color: transparent;
+}
 
-  .Header-logo {
-    padding: 0 12px;
-    max-width: 100%;
-    height: auto;
-  }
+.Header-main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 60px;
+  border-top: 1px solid #b2b4b4;
+}
 
-   .Header-logo:hover {
-    color: rgb(16, 40, 252);
-    text-shadow: 1px 4px 10px #b5b6fa;
-    background:transparent;
-  }
-  
-  .Navbar .Nav-list {
-    display: flex;
-    flex-wrap: nowrap;
-    height: 100%;
-    list-style-type: none;
-    text-align: center;
-  }
-  
-  .Navbar a {
-    height: 100%;
-    border-right: 1px solid #b2b4b4;
-    display: inline-block;
-    padding: 0 calc(100vw - 95vw);
-    text-decoration: none;
-    color: rgb(36, 36, 36);
-    font-size: 16px;
-    font-weight: 600;
-    overflow: hidden;
-  }
+.Header-logo {
+  padding: 0 12px;
+  max-width: 100%;
+  height: auto;
+}
 
-  .Navbar a:hover, .Navbar a:visited, .Navbar a:active  {
-    background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid #b4b2b4;
-    overflow: hidden;
-  }
+.Header-logo:hover {
+  color: rgb(16, 40, 252);
+  text-shadow: 1px 4px 10px #b5b6fa;
+  background: transparent;
+}
 
-  .Navbar a:hover {
-    color: rgb(16, 40, 252);
-    background-color: #CEC2FF;
-  }
+.Navbar .Nav-list {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+  list-style-type: none;
+  text-align: center;
+}
 
-  .Active {
-       color: rgb(16, 40, 252);
-  }
+.Navbar a {
+  height: 100%;
+  border-right: 1px solid #b2b4b4;
+  display: inline-block;
+  padding: 0 calc(100vw - 95vw);
+  text-decoration: none;
+  color: rgb(36, 36, 36);
+  font-size: 16px;
+  font-weight: 600;
+  overflow: hidden;
+}
 
-  /* To align list items in a row */
-  .Row {
-      display: flex;
-  }
+.Navbar a:hover,
+.Navbar a:visited,
+.Navbar a:active {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid #b4b2b4;
+  overflow: hidden;
+}
+
+.Navbar a:hover {
+  color: rgb(16, 40, 252);
+  background-color: #cec2ff;
+}
+
+.Active {
+  color: rgb(16, 40, 252);
+}
+
+/* To align list items in a row */
+.Row {
+  display: flex;
+}
