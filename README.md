@@ -2,3 +2,4 @@ This project is built with [Create React App](https://github.com/facebook/create
 
 ## development
 Simple inspirational web app about running. The header has a running line with the current weather in Stockholm.
+Using [Open Weather API](https://openweathermap.org/api)
